@@ -21,9 +21,9 @@ Visium, STARmap) and imaging-based multiplexing/proteomics (CyCIF, MIBI,
 CODEX). These technologies differ in terms of resolution (single cell vs
 multiple cells), spatial dimension (2D vs 3D), molecular modality
 (protein vs RNA), and throughput (number of cells and genes). More
-information and documentation about the latest version of Giotto
-Analyzer can be found at <https://rubd.github.io/Giotto_site/> (**URL
-change \!\!**).
+information and documentation about the latest **development version**
+of Giotto Analyzer can be found at
+<https://rubd.github.io/Giotto_site_dev/>.
 
 <img src="inst/images/general_figs/overview_datasets.png" />
 
@@ -38,18 +38,16 @@ change \!\!**).
 
 ## Installation
 
-See [FAQs](https://rubd.github.io/Giotto_site/articles/faqs.html) for
-additional information.
+See [FAQs](./articles/faqs.html) for additional information.
 
 #### R installation
 
-You can install Giotto with (\~1-5 mins):
+You can install Giotto development with (\~1-5 mins):
 
 ``` r
 library(devtools)  # if not installed: install.packages('devtools')
 library(remotes)  # if not installed: install.packages('remotes')
-remotes::install_github("RubD/Giotto")
-remotes::install_github("RubD/Giotto@development") # to install the latest development version
+remotes::install_github("RubD/Giotto@development") 
 ```
 
 #### Required python modules
@@ -78,7 +76,7 @@ python modules.
 ##### Manual installation
 
 See [python
-installation](https://rubd.github.io/Giotto_site/articles/installation_issues.html#python-manual-installation)
+installation](https://rubd.github.io/Giotto_site_dev/articles/installation_issues.html#python-manual-installation)
 
 #### Giotto Viewer
 
@@ -97,7 +95,7 @@ See
   - all examples are gradually updated to the latest Giotto version
     \[work in progress\]
 
-[![seqFISH](./inst/images/general_figs/cortex_image_summary.png)](https://rubd.github.io/Giotto_site/articles/mouse_seqFISH_cortex_200914.html)
+[![seqFISH](./inst/images/general_figs/cortex_image_summary.png)](./articles/mouse_seqFISH_cortex_200914.html)
 [![merFISH](./inst/images/general_figs/merFISH_hypoth_image_summary.png)](https://rubd.github.io/Giotto_site/articles/mouse_merFISH_preoptic_region_200909.html)
 [![STARmap](./inst/images/general_figs/starmap_cortex_image_summary.png)](https://rubd.github.io/Giotto_site/articles/mouse_starmap_cortex_200917.html)
 [![Visium\_brain](./inst/images/general_figs/visium_brain_image_summary.png)](https://rubd.github.io/Giotto_site/articles/mouse_visium_brain_200918.html)
