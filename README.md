@@ -1,5 +1,5 @@
 
-<!-- index.md is generated from index.Rmd. Please edit that file -->
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 <!-- This line is from RStudio -->
 
