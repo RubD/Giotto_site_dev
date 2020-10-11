@@ -38,7 +38,8 @@ of Giotto Analyzer can be found at
 
 ## Installation
 
-See [FAQs](./articles/faqs.html) for additional information.
+See [FAQs](https://rubd.github.io/Giotto_site_dev/articles/faqs.html)
+for additional information.
 
 #### R installation
 
@@ -76,7 +77,7 @@ python modules.
 ##### Manual installation
 
 See [python
-installation](https://rubd.github.io/Giotto_site_dev/articles/installation_issues.html#python-manual-installation)
+installation](./articles/installation_issues.html#python-manual-installation)
 
 #### Giotto Viewer
 
@@ -95,14 +96,14 @@ See
   - all examples are gradually updated to the latest Giotto version
     \[work in progress\]
 
-[![seqFISH](./inst/images/general_figs/cortex_image_summary.png)](./articles/mouse_seqFISH_cortex_200914.html)
-[![merFISH](./inst/images/general_figs/merFISH_hypoth_image_summary.png)](https://rubd.github.io/Giotto_site/articles/mouse_merFISH_preoptic_region_200909.html)
-[![STARmap](./inst/images/general_figs/starmap_cortex_image_summary.png)](https://rubd.github.io/Giotto_site/articles/mouse_starmap_cortex_200917.html)
-[![Visium\_brain](./inst/images/general_figs/visium_brain_image_summary.png)](https://rubd.github.io/Giotto_site/articles/mouse_visium_brain_200918.html)
-[![Visium\_kidney](./inst/images/general_figs/visium_kidney_image_summary.png)](https://rubd.github.io/Giotto_site/articles/mouse_visium_kidney_200916.html)
-[![CyCIF](./inst/images/general_figs/cyCIF_PDAC_image_summary.png)](https://rubd.github.io/Giotto_site/articles/human_cycif_PDAC_200916.html)
-[![osmFISH](./inst/images/general_figs/osmFISH_SS_cortex_image_summary.png)](https://rubd.github.io/Giotto_site/articles/mouse_osmFISH_SScortex_200915.html)
-[![CODEX](./inst/images/general_figs/CODEX_spleen_image_summary.png)](https://rubd.github.io/Giotto_site/articles/mouse_CODEX_spleen_200921.html)
+[![seqFISH](./inst/images/general_figs/cortex_image_summary.png)](https://rubd.github.io/Giotto_site_dev/articles/mouse_seqFISH_cortex_200914.html)
+[![merFISH](./inst/images/general_figs/merFISH_hypoth_image_summary.png)](./articles/mouse_merFISH_preoptic_region_200909.html)
+[![STARmap](./inst/images/general_figs/starmap_cortex_image_summary.png)](./articles/mouse_starmap_cortex_200917.html)
+[![Visium\_brain](./inst/images/general_figs/visium_brain_image_summary.png)](./articles/mouse_visium_brain_200918.html)
+[![Visium\_kidney](./inst/images/general_figs/visium_kidney_image_summary.png)](./articles/mouse_visium_kidney_200916.html)
+[![CyCIF](./inst/images/general_figs/cyCIF_PDAC_image_summary.png)](./articles/human_cycif_PDAC_200916.html)
+[![osmFISH](./inst/images/general_figs/osmFISH_SS_cortex_image_summary.png)](./articles/mouse_osmFISH_SScortex_200915.html)
+[![CODEX](./inst/images/general_figs/CODEX_spleen_image_summary.png)](./articles/mouse_CODEX_spleen_200921.html)
 
 ## References
 

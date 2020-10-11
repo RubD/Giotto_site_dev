@@ -54,7 +54,7 @@ navbar:
 
   right:
     - icon: fa-github
-      href: https://github.com/RubD/Giotto
+      href: https://github.com/RubD/Giotto/tree/development
 
 reference:
   - title: Giotto object

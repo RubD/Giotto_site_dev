@@ -118,7 +118,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/RubD/Giotto">
+  <a href="https://github.com/RubD/Giotto/tree/development">
     <span class="fa fa-github"></span>
      
   </a>
@@ -140,83 +140,15 @@
 <a href="#giotto" class="anchor"></a>Giotto</h1></div>
 <!-- badges: start -->
 <!-- badges: end -->
-<p>The Giotto package consists of two modules, Giotto Analyzer and Viewer (see <a href="http://www.spatialgiotto.com">www.spatialgiotto.com</a>), which provide tools to process, analyze and visualize <strong>single-cell spatial expression</strong> data. The underlying framework is generalizable to virtually all currently available spatial datasets. We recently demonstrated the general applicability on 10 different datasets created by 9 different state-of-the-art spatial technologies, including <em>in situ</em> hybridization (seqFISH+, merFISH, osmFISH), sequencing (Slide-seq, Visium, STARmap) and imaging-based multiplexing/proteomics (CyCIF, MIBI, CODEX). These technologies differ in terms of resolution (single cell vs multiple cells), spatial dimension (2D vs 3D), molecular modality (protein vs RNA), and throughput (number of cells and genes). More information and documentation about the latest version of Giotto Analyzer can be found at <a href="https://rubd.github.io/Giotto_site/" class="uri">https://rubd.github.io/Giotto_site/</a> (<strong>URL change !!</strong>).</p>
+<p>The Giotto package consists of two modules, Giotto Analyzer and Viewer (see <a href="http://www.spatialgiotto.com">www.spatialgiotto.com</a>), which provide tools to process, analyze and visualize <strong>single-cell spatial expression</strong> data. The underlying framework is generalizable to virtually all currently available spatial datasets. We recently demonstrated the general applicability on 10 different datasets created by 9 different state-of-the-art spatial technologies, including <em>in situ</em> hybridization (seqFISH+, merFISH, osmFISH), sequencing (Slide-seq, Visium, STARmap) and imaging-based multiplexing/proteomics (CyCIF, MIBI, CODEX). These technologies differ in terms of resolution (single cell vs multiple cells), spatial dimension (2D vs 3D), molecular modality (protein vs RNA), and throughput (number of cells and genes). More information and documentation about the latest <strong>development version</strong> of Giotto Analyzer can be found at <a href="https://rubd.github.io/Giotto_site_dev/" class="uri">https://rubd.github.io/Giotto_site_dev/</a>.</p>
 <p><img src="inst/images/general_figs/overview_datasets.png"></p>
-<div id="requirements" class="section level2">
+<div id="reference" class="section level2">
 <h2 class="hasAnchor">
-<a href="#requirements" class="anchor"></a>Requirements</h2>
+<a href="#reference" class="anchor"></a>Reference</h2>
 <ul>
-<li>R (&gt;= 3.5.1)</li>
-<li>Python (&gt;= 3.0)</li>
-<li>Windows, MacOS or Linux specific installation tools. See <a href="https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites">link</a>.</li>
-</ul>
-<p> </p>
-</div>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<p>See <a href="https://rubd.github.io/Giotto_site/articles/faqs.html">FAQs</a> for additional information.</p>
-<div id="r-installation" class="section level4">
-<h4 class="hasAnchor">
-<a href="#r-installation" class="anchor"></a>R installation</h4>
-<p>You can install Giotto with (~1-5 mins):</p>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">devtools</span>)  <span class="co"># if not installed: install.packages('devtools')</span>
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">remotes</span>)  <span class="co"># if not installed: install.packages('remotes')</span>
-<span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"RubD/Giotto"</span>)
-<span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"RubD/Giotto@development"</span>) <span class="co"># to install the latest development version</span></pre></div>
-</div>
-<div id="required-python-modules" class="section level4">
-<h4 class="hasAnchor">
-<a href="#required-python-modules" class="anchor"></a>Required python modules</h4>
-<p>These are necessary to run all available analyses, but can be installed automatically.</p>
-<p>Required python modules:<br>
-- pandas<br>
-- python-igraph (igraph)<br>
-- networkx<br>
-- leidenalg<br>
-- python-louvain (community)<br>
-- smfishHmrf<br>
-- python.app (!!OSX only!!)<br>
-- scikit-learn</p>
-<div id="automatic-installation" class="section level5">
-<h5 class="hasAnchor">
-<a href="#automatic-installation" class="anchor"></a>Automatic installation</h5>
-<p>The python modules will be installed automatically in a miniconda environment when installing Giotto. However, it will ask you whether you want to install them and you can opt out and select your preferred python path. In that case you need to do a manual installation of the python modules.</p>
-</div>
-<div id="manual-installation" class="section level5">
-<h5 class="hasAnchor">
-<a href="#manual-installation" class="anchor"></a>Manual installation</h5>
-<p>See <a href="https://rubd.github.io/Giotto_site/articles/installation_issues.html#python-manual-installation">python installation</a></p>
-</div>
-</div>
-<div id="giotto-viewer" class="section level4">
-<h4 class="hasAnchor">
-<a href="#giotto-viewer" class="anchor"></a>Giotto Viewer</h4>
-<p>See <a href="http://spatial.rc.fas.harvard.edu/spatialgiotto/giotto.install.native.html">link</a></p>
-<p> </p>
-</div>
-</div>
-<div id="examples" class="section level2">
-<h2 class="hasAnchor">
-<a href="#examples" class="anchor"></a>Examples</h2>
-<ul>
-<li>see <a href="https://github.com/RubD/spatial-datasets" class="uri">https://github.com/RubD/spatial-datasets</a> to find raw and pre-processed input data and Giotto scripts (in progress).</li>
-<li>typical run time range for the different datasets on a personal computer is around 10~45 mins.<br>
+<li>
+<a href="https://www.biorxiv.org/content/10.1101/701680v2">Dries, R., Zhu, Q. et al. Giotto, a toolbox for integrative analysis and visualization of spatial expression data. bioRxiv 701680 (2019).</a> <a href="doi:10.1101/701680" class="uri">doi:10.1101/701680</a>
 </li>
-<li>click on the image and try them out yourself.<br>
-</li>
-<li>all examples are gradually updated to the latest Giotto version <br><span class="math display"><em>w</em><em>o</em><em>r</em><em>k</em><em>i</em><em>n</em><em>p</em><em>r</em><em>o</em><em>g</em><em>r</em><em>e</em><em>s</em><em>s</em></span><br>
-</li>
-</ul>
-<p><a href="https://rubd.github.io/Giotto_site/articles/mouse_seqFISH_cortex_200914.html"><img src="./inst/images/general_figs/cortex_image_summary.png" alt="seqFISH"></a> <a href="https://rubd.github.io/Giotto_site/articles/mouse_merFISH_preoptic_region_200909.html"><img src="./inst/images/general_figs/merFISH_hypoth_image_summary.png" alt="merFISH"></a> <a href="https://rubd.github.io/Giotto_site/articles/mouse_starmap_cortex_200917.html"><img src="./inst/images/general_figs/starmap_cortex_image_summary.png" alt="STARmap"></a> <a href="https://rubd.github.io/Giotto_site/articles/mouse_visium_brain_200918.html"><img src="./inst/images/general_figs/visium_brain_image_summary.png" alt="Visium_brain"></a> <a href="https://rubd.github.io/Giotto_site/articles/mouse_visium_kidney_200916.html"><img src="./inst/images/general_figs/visium_kidney_image_summary.png" alt="Visium_kidney"></a> <a href="https://rubd.github.io/Giotto_site/articles/human_cycif_PDAC_200916.html"><img src="./inst/images/general_figs/cyCIF_PDAC_image_summary.png" alt="CyCIF"></a> <a href="https://rubd.github.io/Giotto_site/articles/mouse_osmFISH_SScortex_200915.html"><img src="./inst/images/general_figs/osmFISH_SS_cortex_image_summary.png" alt="osmFISH"></a> <a href="https://rubd.github.io/Giotto_site/articles/mouse_CODEX_spleen_200921.html"><img src="./inst/images/general_figs/CODEX_spleen_image_summary.png" alt="CODEX"></a></p>
-</div>
-<div id="references" class="section level2">
-<h2 class="hasAnchor">
-<a href="#references" class="anchor"></a>References</h2>
-<ul>
-<li><p><a href="https://www.biorxiv.org/content/10.1101/701680v2">Dries, R., Zhu, Q. et al. Giotto, a toolbox for integrative analysis and visualization of spatial expression data. bioRxiv 701680 (2019).</a> <a href="doi:10.1101/701680" class="uri">doi:10.1101/701680</a></p></li>
-<li><p><a href="https://www.nature.com/articles/s41586-019-1049-y">Eng, C.-H. L. et al. Transcriptome-scale super-resolved imaging in tissues by RNA seqFISH+. Nature 1 (2019).</a> <a href="doi:10.1038/s41586-019-1049-y" class="uri">doi:10.1038/s41586-019-1049-y</a></p></li>
-<li><p><a href="https://www.nature.com/articles/nbt.4260">Zhu, Q., Shah, S., Dries, R., Cai, L. &amp; Yuan, G.-C. Identification of spatially associated subpopulations by combining scRNAseq and sequential fluorescence in situ hybridization data. Nature Biotechnology (2018).</a> <a href="doi:10.1038/nbt.4260" class="uri">doi:10.1038/nbt.4260</a></p></li>
 </ul>
 </div>
 </div>
