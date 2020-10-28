@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>extended_gini_fun — extended_gini_fun • Giotto</title>
+<title>get10Xmatrix_h5 — get10Xmatrix_h5 • Giotto</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="extended_gini_fun — extended_gini_fun" />
-<meta property="og:description" content="calculate gini coefficient on a minimum length vector" />
+<meta property="og:title" content="get10Xmatrix_h5 — get10Xmatrix_h5" />
+<meta property="og:description" content="This function creates an expression matrix from a 10X h5 file path" />
 
 
 
@@ -181,21 +181,37 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>extended_gini_fun</h1>
+    <h1>get10Xmatrix_h5</h1>
     <small class="dont-index">Source: <a href='https://github.com/RubD/Giotto/blob/master/R/general_help.R'><code>R/general_help.R</code></a></small>
-    <div class="hidden name"><code>extended_gini_fun.Rd</code></div>
+    <div class="hidden name"><code>get10Xmatrix_h5.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>calculate gini coefficient on a minimum length vector</p>
+    <p>This function creates an expression matrix from a 10X h5 file path</p>
     </div>
 
-    <pre class="usage"><span class='fu'>extended_gini_fun</span><span class='op'>(</span><span class='va'>x</span>, weights <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span><span class='op'>(</span><span class='fl'>1</span>, length <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span><span class='op'>)</span>, minimum_length <span class='op'>=</span> <span class='fl'>16</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>get10Xmatrix_h5</span><span class='op'>(</span><span class='va'>path_to_data</span>, gene_ids <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"symbols"</span>, <span class='st'>"ensembl"</span><span class='op'>)</span><span class='op'>)</span></pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>path_to_data</th>
+      <td><p>path to the 10X .h5 file</p></td>
+    </tr>
+    <tr>
+      <th>gene_ids</th>
+      <td><p>use gene symbols (default) or ensembl ids for the gene expression matrix</p></td>
+    </tr>
+    </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>gini coefficient</p>
+    <p>(list of) sparse expression matrix from 10X</p>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>If the .h5 10x file has multiple modalities (e.g. RNA and protein),
+ multiple matrices will be returned</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

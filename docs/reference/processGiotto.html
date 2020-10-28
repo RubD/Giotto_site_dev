@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>extended_gini_fun — extended_gini_fun • Giotto</title>
+<title>processGiotto — processGiotto • Giotto</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="extended_gini_fun — extended_gini_fun" />
-<meta property="og:description" content="calculate gini coefficient on a minimum length vector" />
+<meta property="og:title" content="processGiotto — processGiotto" />
+<meta property="og:description" content="Wrapper for the different Giotto object processing functions" />
 
 
 
@@ -181,22 +181,79 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>extended_gini_fun</h1>
-    <small class="dont-index">Source: <a href='https://github.com/RubD/Giotto/blob/master/R/general_help.R'><code>R/general_help.R</code></a></small>
-    <div class="hidden name"><code>extended_gini_fun.Rd</code></div>
+    <h1>processGiotto</h1>
+    <small class="dont-index">Source: <a href='https://github.com/RubD/Giotto/blob/master/R/auxiliary_giotto.R'><code>R/auxiliary_giotto.R</code></a></small>
+    <div class="hidden name"><code>processGiotto.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>calculate gini coefficient on a minimum length vector</p>
+    <p>Wrapper for the different Giotto object processing functions</p>
     </div>
 
-    <pre class="usage"><span class='fu'>extended_gini_fun</span><span class='op'>(</span><span class='va'>x</span>, weights <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span><span class='op'>(</span><span class='fl'>1</span>, length <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span><span class='op'>)</span>, minimum_length <span class='op'>=</span> <span class='fl'>16</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>processGiotto</span><span class='op'>(</span>
+  <span class='va'>gobject</span>,
+  filter_params <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='op'>)</span>,
+  norm_params <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='op'>)</span>,
+  stat_params <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='op'>)</span>,
+  adjust_params <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='op'>)</span>,
+  verbose <span class='op'>=</span> <span class='cn'>TRUE</span>
+<span class='op'>)</span></pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>gobject</th>
+      <td><p>giotto object</p></td>
+    </tr>
+    <tr>
+      <th>filter_params</th>
+      <td><p>additional parameters to filterGiotto</p></td>
+    </tr>
+    <tr>
+      <th>norm_params</th>
+      <td><p>additional parameters to normalizeGiotto</p></td>
+    </tr>
+    <tr>
+      <th>stat_params</th>
+      <td><p>additional parameters to addStatistics</p></td>
+    </tr>
+    <tr>
+      <th>adjust_params</th>
+      <td><p>additional parameters to adjustGiottoMatrix</p></td>
+    </tr>
+    <tr>
+      <th>verbose</th>
+      <td><p>be verbose (default is TRUE)</p></td>
+    </tr>
+    </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>gini coefficient</p>
+    <p>giotto object</p>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
+    <p>See <code><a href='filterGiotto.html'>filterGiotto</a></code>, <code><a href='normalizeGiotto.html'>normalizeGiotto</a></code>,
+<code><a href='addStatistics.html'>addStatistics</a></code> and <code><a href='adjustGiottoMatrix.html'>adjustGiottoMatrix</a></code> for more
+information about the different parameters in each step. If you do not provide
+them it will use the default values.</p>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='va'>mini_giotto_single_cell</span><span class='op'>)</span>
+
+<span class='va'>processed_object</span> <span class='op'>=</span> <span class='fu'>processGiotto</span><span class='op'>(</span><span class='va'>mini_giotto_single_cell</span>,
+                                 filter_params <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>gene_det_in_min_cells <span class='op'>=</span> <span class='fl'>10</span>,
+                                 min_det_genes_per_cell <span class='op'>=</span> <span class='fl'>10</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; 1. start filter step 
+#&gt; 2. start normalization step 
+#&gt; 3. start cell and gene statistics step 
+#&gt; 
+#&gt;  gene statistics has already been applied once, will be overwritten 
+#&gt; 
+#&gt;  cells statistics has already been applied once, will be overwritten 
+#&gt; 3. start adjusted matrix step </div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
